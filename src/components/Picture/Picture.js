@@ -30,7 +30,7 @@ const Picture = (
       <CardActions>
         {author && (
           <>
-            <Typography variant='h6'>By: </Typography>
+            <Typography variant='h6'>От: </Typography>
             <Typography variant='h6' component={NavLink} to={`/users/${author._id}`} exact>
               {author.displayName}
             </Typography>
