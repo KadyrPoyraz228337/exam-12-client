@@ -81,7 +81,7 @@ const Login = () => {
               value={userInfo.password}
               onChange={inputChangeHandler}
             />
-            {error && <Alert color="danger">
+            {error && <Alert severity="error">
               {error}
             </Alert>}
             <Button
