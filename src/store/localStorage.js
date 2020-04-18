@@ -1,4 +1,4 @@
-import {EDIT_USER_SUCCESS, LOGIN_USER_SUCCESS, LOGOUT_USER_SUCCESS} from "./actions/actionTypes";
+import {LOGIN_USER_SUCCESS, LOGOUT_USER_SUCCESS} from "./actions/actionTypes";
 
 export const saveToLocalStorage = state => {
   try {
@@ -23,7 +23,7 @@ export const loadFromLocalStorage = () => {
   }
 };
 
-const actions = [LOGOUT_USER_SUCCESS, LOGIN_USER_SUCCESS, EDIT_USER_SUCCESS];
+const actions = [LOGOUT_USER_SUCCESS, LOGIN_USER_SUCCESS];
 
 export const localStorageMiddleware = store => next => action => {
   let result = next(action);
